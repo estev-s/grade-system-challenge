@@ -1,6 +1,5 @@
 ' Sistema de notas UVV '
-# libs
-import time
+
 
 # main
 def main():
@@ -45,13 +44,12 @@ def notas_aops():
         print   ("Valor inválido, digite novamente...")
         aop_3   = float(input("Digite a nota da AOP 3: "))
     
-    #total das aops:
 
     total_aops  = aop_1 + aop_2 + aop_3
     print       ("Soma das AOPs:", round(total_aops, 1))
     return      total_aops
 
-
+# prova regular
 def nota_prova_regular():
     
     prova_regular = float(input("Digite a nota da prova regular: "))
@@ -79,6 +77,8 @@ def nota_prova_regular():
                 
                 continue
 
+
+# analise das notas e status do aluno
 def analise_das_notas(resultado_aops, resultado_prova_regular, nome_aluno):
     
     x = resultado_aops
